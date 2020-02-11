@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DopeWars.iOS", "DopeWars.iO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DopeWars", "DopeWars\DopeWars.csproj", "{2E63FEC6-5107-4260-B474-2A0C494768B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{56BA875E-4972-4B4F-8EC8-6355BB266110}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,9 @@ Global
 		{2E63FEC6-5107-4260-B474-2A0C494768B2}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{2E63FEC6-5107-4260-B474-2A0C494768B2}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{2E63FEC6-5107-4260-B474-2A0C494768B2}.Release|iPhone.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F381AF6B-DB66-4C5B-B439-B8250F05BA65} = {56BA875E-4972-4B4F-8EC8-6355BB266110}
+		{B1DC6B57-FCA2-4C32-916B-E58F91CD4EBF} = {56BA875E-4972-4B4F-8EC8-6355BB266110}
 	EndGlobalSection
 EndGlobal
