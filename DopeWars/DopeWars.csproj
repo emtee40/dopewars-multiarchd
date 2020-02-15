@@ -21,4 +21,8 @@
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\LocationsView.xaml.cs" />
+    <Compile Remove="Views\ProductsView.xaml.cs" />
+  </ItemGroup>
 </Project>

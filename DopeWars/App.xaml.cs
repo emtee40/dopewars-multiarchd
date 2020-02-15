@@ -21,7 +21,7 @@ namespace DopeWars
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/HomeView");
+            await NavigationService.NavigateAsync("NavigationPage/TabbedView?selectedTab=HomeView");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

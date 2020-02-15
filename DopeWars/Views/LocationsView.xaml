@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    x:Class="DopeWars.Views.HomeView"
+    x:Class="DopeWars.Views.LocationsView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-    Title="{Binding Title}"
+    Title="Locations"
     prism:ViewModelLocator.AutowireViewModel="True">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -21,7 +21,7 @@
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-            Text="Homepage" />
+            Text="locations page" />
 
     </Grid>
 </ContentPage>
