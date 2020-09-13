@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage
-    x:Class="DopeWars.Views.HomeView"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-    Title="{Binding Title}"
-    prism:ViewModelLocator.AutowireViewModel="True">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*" />
-            <ColumnDefinition Width="50*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-        </Grid.RowDefinitions>
-        <Label
-            Grid.Row="0"
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Text="Homepage" />
-
+<ContentPage x:Class="DopeWars.Views.HomeView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             Title="{Binding Title}"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Name="CityList">
+    <Grid ColumnDefinitions="50*, 50*" RowDefinitions="50, *">
+        <CollectionView ItemsSource="{Binding ListOfCities}"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Button Text="{Binding .}"
+                                Command="{Binding Source={x:Reference CityList}, Path=BindingContext.CitySelectionBtn}"
+                                CommandParameter="{Binding .}"
+                                Visual="Material"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </Grid>
 </ContentPage>

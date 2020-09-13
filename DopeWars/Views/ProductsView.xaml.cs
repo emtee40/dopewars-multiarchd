@@ -1,4 +1,4 @@
-namespace DopeWars.Views
+﻿namespace DopeWars.Views
 {
     public partial class ProductsView
     {

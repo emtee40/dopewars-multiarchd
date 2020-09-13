@@ -1,4 +1,3 @@
-using System;
 using Prism.Navigation;
 
 namespace DopeWars.ViewModels
@@ -7,7 +6,6 @@ namespace DopeWars.ViewModels
     {
         public LocationsViewModel(INavigationService navigationService) : base(navigationService)
         {
-            Title = "Locations";
         }
     }
 }
