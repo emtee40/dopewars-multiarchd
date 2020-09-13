@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TabbedPage x:Class="DopeWars.Views.TabbedView"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:DopeWars.Views"
+            xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+            xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+            ios:Page.UseSafeArea="true"
+    Title="{Binding Title}"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <TabbedPage.Children>
+        <local:HomeView />
+        <local:ProductsView />
+        <local:LocationsView />
+    </TabbedPage.Children>
+</TabbedPage>

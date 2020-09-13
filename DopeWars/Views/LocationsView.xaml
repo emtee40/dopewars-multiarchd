@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             x:Class="DopeWars.Views.LocationsView"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             Title="Locations">
+        <Grid RowDefinitions="50,50,50,50"
+          ColumnDefinitions="50*,50*">
+            <Label Text="Locations"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"/>
+     </Grid>
+</ContentPage>
